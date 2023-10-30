@@ -2,16 +2,16 @@ package springboot.Project.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import springboot.Project.dao.UserDAO;
+import springboot.Project.dao.UserDao;
 import springboot.Project.model.User;
 
 import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
-    private UserDAO userDAO;
+    private UserDao userDAO;
 
     @Autowired
-    public UserServiceImpl(UserDAO userDAO) {
+    public UserServiceImpl(UserDao userDAO) {
         this.userDAO = userDAO;
     }
 

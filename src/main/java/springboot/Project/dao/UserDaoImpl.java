@@ -10,7 +10,7 @@ import springboot.Project.model.User;
 import java.util.List;
 
 @Component
-public class UserDaoImpl implements UserDAO {
+public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
     private EntityManager entityManager;
